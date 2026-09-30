@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>Tic Tac Toe</h1>
+        <p id="status">Player X's Turn</p>
+        <!-- Game Board -->
+        <div class="board">
+            <button class="cell" data-index="0"></button>
+            <button class="cell" data-index="1"></button>
+            <button class="cell" data-index="2"></button>
+
+            <button class="cell" data-index="3"></button>
+            <button class="cell" data-index="4"></button>
+            <button class="cell" data-index="5"></button>
+
+            <button class="cell" data-index="6"></button>
+            <button class="cell" data-index="7"></button>
+            <button class="cell" data-index="8"></button>
+        </div>
+        <button id="restart">Restart Round</button>
+        <!-- Scoreboard -->
+        <div class="scoreboard">
+            <h2>Score Board</h2>
+            <div class="scores">
+                <div>
+                    <h3>Player X</h3>
+                    <p id="scoreX">0</p>
+                </div>
+                <div>
+                    <h3>Draws</h3>
+                    <p id="scoreDraw">0</p>
+                </div>
+                <div>
+                    <h3>Player O</h3>
+                    <p id="scoreO">0</p>
+                </div>
+            </div>
+            <button id="resetScore">Reset Score</button>
+        </div>
+    </div>
+    <!-- Result Popup -->
+    <div id="resultPopup" class="popup">
+        <div class="popup-content">
+            <h2 id="resultMessage">Player X Wins!</h2>
+            <p>Do you want to play again?</p>
+            <button id="playAgain">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
